@@ -1,7 +1,7 @@
 // imports express & mongoose libraries and shortUrl export; sets app = express call
 const express = require('express')
 const mongoose = require('mongoose')
-const ShortUrl = require('./models/shortUrl')
+const ShortUrl = require('./s/shortUrl')
 const app = express()
 
 
