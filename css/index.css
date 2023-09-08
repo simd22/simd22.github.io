@@ -1,0 +1,29 @@
+a  {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Pushes left content to the left and right content to the right */
+    font-size: 20px;
+}
+
+.header-left {
+    font-size: 25px;
+}
+
+.header-right {
+    display: flex; /* Make the links and divider flex items */
+    align-items: center; /* Center them vertically */
+}
+
+.header-right .divider {
+    margin: 0 10px; /* Add spacing around the divider */
+    color: black; /* Style the divider color */
+}
+
+body {
+    background-color: white;
+}
+
