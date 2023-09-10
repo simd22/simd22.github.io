@@ -1,36 +1,33 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from "react-icons/fa"
-import { HiOutlineMail } from 'react-icons/hi'
-import Logo from "../assets/logo.png"
-import {Link} from 'react-scroll'
+import {FaBars, FaTimes} from "react-icons/fa"
 
+// FaGithub, FaLinkedin
+// import { HiOutlineMail } from 'react-icons/hi'
+// import Logo from "../assets/logo.png"
 
+import {Link as ScrollLink} from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom';
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-        <div>
-            <img src={Logo} alt="Logo" style={{width: '50px'}} />
-        </div>
+    <div className='font-bold fixed w-full h-[60px] z-999 top-0 flex justify-between items-center px-4 bg-[#DF9ECD] text-[#E4F8E6]'>
+        <RouterLink to="/">
+            
+                <div className='border px-1 rounded'>
+                    SD
+                </div>
+            
+        </RouterLink>
 
         {/* MENU */}
         <ul className='hidden md:flex'>
             <li>
-                <Link activeClass="active" to="home" smooth={true} duration={500}>
-                    Home
-                </Link>
+                <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-                <Link activeClass="active" to="about" smooth={true} duration={500}>
-                    About
-                </Link>
-            </li>
-            <li>
-                <Link activeClass="active" to="projects" smooth={true} duration={500}>
-                    Projects
-                </Link>
+                <RouterLink to="/about">About</RouterLink>
             </li>
         </ul>
 
@@ -41,28 +38,19 @@ const Navbar = () => {
 
         {/* MOBILE MENU */}
 
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex-col justify-center items-center'}>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#001193]'}>
             <li className='py-6 text-4xl'>
-                <Link onClick={handleClick} activeClass="active" to="home" smooth={true} duration={500}>
-                    Home
-                </Link>
+                <RouterLink to="/" onClick={handleClick}>Home</RouterLink>
             </li>
             <li className='py-6 text-4xl'>
-                <Link onClick={handleClick} activeClass="active" to="about" smooth={true} duration={500}>
-                    About
-                </Link>
-            </li>
-            <li className='py-6 text-4xl'>
-                <Link onClick={handleClick} activeClass="active" to="projects" smooth={true} duration={500}>
-                    Projects
-                </Link>
+                <RouterLink to="/about" onClick={handleClick}>About</RouterLink>
             </li>
         </ul>
         
         {/* SOCIAL ICONS */}
         <div className='hidden'></div>
 
-        {/* Social icons */}
+        {/* Social icons
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
             <li className='w-[160px] h=[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
@@ -86,7 +74,7 @@ const Navbar = () => {
                 </a>
             </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }
