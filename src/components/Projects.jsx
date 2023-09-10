@@ -20,18 +20,15 @@ const Projects = () => {
                 <div className='flex flex-col space-y-2'>
                     {/* PICTURE */}
                     <RouterLink to="/spotify">
-
                         <div style={{ backgroundImage: `url(${spotify})`}} 
-                        className='
-
-                        hover:scale-105 shadow-lg shadow-[#B36BCC] group container rounded-md flex justify-center text-center items-center mx-auto content-div hover:scale-1.02 transform transition-transform duration-200 ease-in-out '>
+                        className='hover:scale-105 shadow-lg shadow-[#B36BCC] group container rounded-md flex justify-center text-center items-center mx-auto content-div hover:scale-1.02 transform transition-transform duration-200 ease-in-out '>
                             {/* Hover Effects */}
                             <div className='opacity-0 group-hover:opacity-100 flex flex-col items-center'>
                                 <span className='text-m sm:text-xl font-bold text-white tracking-wider'>
                                     Behind Spotify
                                 </span>
                                 <div className='text-m sm:text-xl max-w-[200px] text-[#00A5E0]'>
-                                    Incorporating the Spotify API in a React app with user authentication
+                                    Incorporating the Spotify API for user authentication and user info
                                 </div>
                             </div>
                         </div>
@@ -65,7 +62,7 @@ const Projects = () => {
                                     Personal Portfolio
                                 </span>
                                 <div className='text-m sm:text-xl max-w-[200px] text-[#00A5E0]'>
-                                    Getting creative with React and Tailwind.css
+                                    Getting creative with React and Tailwind CSS
                                 </div>
                             </div>
                         </div>
@@ -87,7 +84,6 @@ const Projects = () => {
 
                 {/* SHORTENER GRID ITEM */}
                 <div className='flex flex-col space-y-2'>
-
                     <RouterLink to="/shortener">
                         {/* PICTURE */}
                         <div style={{ backgroundImage: `url(${shortmock})`}} 
@@ -99,7 +95,7 @@ const Projects = () => {
                                     Shorten Pls
                                 </span>
                                 <div className='text-m sm:text-xl max-w-[200px] text-[#00A5E0]'>
-                                    Using MongoDB to store links in a database for shortening
+                                    Using MongoDB database for storing and shortening links
                                 </div>
                             </div>
                         </div>

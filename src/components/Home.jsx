@@ -4,12 +4,12 @@ import { Link as ScrollLink } from 'react-scroll';
 import bitmoji from '../assets/bitmoji.png'
 import Typewriter from 'typewriter-effect';
 
-
 const Home = () => {
   return (
     <div name='home' className='w-full h-screen pt-[60px] bg-[#F3E5FA]'> 
         {/* Container */}
         <div className='max-w-[1100px] mx-auto px-8 flex flex-col justify-center h-full md:flex-row md:items-center'>
+            
             {/* TEXT */}
             <div className='max-w-[650px] md:flex flex-col'>
                 <h2 className='text-1xl sm:text-4xl font-bold text-pink-600'>Hi, I'm Simeon! {' '}
@@ -29,11 +29,11 @@ const Home = () => {
 
                 <div className='flex'>
                     <ScrollLink activeClass="active" to="projects" smooth={true} duration={500}>
-                        <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]'>View Work</button>
+                        <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]'>
+                            See Projects
+                        </button>
                     </ScrollLink>
                 </div>
-
-                
             </div>
 
             {/* IMAGE */}

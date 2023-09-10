@@ -24,13 +24,12 @@ const Navbar = () => {
             </li>
         </ul>
 
-        {/* HAMBURGER */}
+        {/* MOBILE LINES */}
         <div onClick={handleClick} className='md:hidden z-10'>
             {!nav ? <FaBars/> : <FaTimes />}
         </div>
 
         {/* MOBILE MENU */}
-
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#DF9ECD]'}>
             <li className='py-6 text-4xl'>
                 <RouterLink to="/" onClick={handleClick}>Home</RouterLink>

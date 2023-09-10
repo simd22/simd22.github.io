@@ -1,8 +1,7 @@
 import React from 'react';
 import spotify from '../assets/spotify.png';
+import github from '../assets/github.png'
 
-// text-1xl sm:text-4xl MAKE SURE TO USE THIS FOR RESPONSIVENESS
-// https://spotify-clone-922c2.web.app/
 const Spotify = () => {
   return (
     <div name="spotify" className='w-full h-screen pt-[60px] pb-[60px] bg-[#F3E5FA] flex flex-col items-center overflow-auto'>
@@ -20,7 +19,7 @@ const Spotify = () => {
         <div className='py-4'>
         <p className='pt-[10px] font-bold text-lg sm:text-2xl'>About</p>
         <p className='text-s sm:text-lg'>
-          In this project, I created a React app resembling one of my favorite apps: Spotify. The project incorporated the Spotify API in several areas including user authentication and requesting user playlist and account information.
+          In this project, I created a React app resembling one of my favorite apps, Spotify. The project incorporated the Spotify API in several areas including user authentication and requesting user playlist and account information.
         </p>
         </div>
         
@@ -44,18 +43,20 @@ const Spotify = () => {
     
       </div>
       
-      <div>
-      <a
-        href="https://spotify-clone-922c2.web.app/" // Replace with the URL of the external website
-        target="_blank"              // Open the link in a new tab or window
-        rel="noopener noreferrer"     // Recommended for security when using target="_blank"
-      >
-        <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]'>
-          See Final Product
-        </button>
-      </a>
+      <div className='flex flex-col'>
+        <a href="https://spotify-clone-922c2.web.app/" target="_blank" rel="noopener noreferrer">
+          <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]'>
+            See Final Product
+          </button>
+        </a>
 
-    </div>
+        <a href="https://github.com/simd22/spot" target="_blank" rel="noopener noreferrer">
+        <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-9 py-3 my-2 flex items-center rounded-full hover:bg-[#0019C1] hover:border-[#0019C1] hover:text-[#FCF9DC]'>
+          <p className='pr-3'>See Code</p>
+          <img src={github} alt="link to github" className='w-[20px] h-[20px]' />
+        </button>
+        </a>
+      </div>
 
     </div>
   );

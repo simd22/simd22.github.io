@@ -1,5 +1,6 @@
 import React from 'react'
 import short from '../assets/shortener.png'
+import github from '../assets/github.png'
 
 const Shortener = () => {
   return (
@@ -42,15 +43,12 @@ const Shortener = () => {
         </div>
       </div>
       
-      {/* <a
-        href="https://spotify-clone-922c2.web.app/" // Replace with the URL of the external website
-        target="_blank"              // Open the link in a new tab or window
-        rel="noopener noreferrer"     // Recommended for security when using target="_blank"
-      >
-        <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]'>
-          See Final Product
+      <a href="https://github.com/simd22/ShortenPls" target="_blank" rel="noopener noreferrer">
+      <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-9 py-3 my-2 flex items-center rounded-full hover:bg-[#0019C1] hover:border-[#0019C1] hover:text-[#FCF9DC]'>
+          <p className='pr-3'>See Code</p>
+          <img src={github} alt="link to github" className='w-[20px] h-[20px]' />
         </button>
-      </a> */}
+      </a>
 
     </div>
   )
