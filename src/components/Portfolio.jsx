@@ -23,16 +23,16 @@ const Portfolio = () => {
         <div className='py-4'>
           <p className='pt-[10px] font-bold text-lg sm:text-2xl'>About</p>
           <p className='text-s sm:text-lg'>
-            Welcome to my personal portfolio! I used React for backend function, Tailwind CSS for styling, and Firebase to deploy the site. 
+            Welcome to my personal portfolio! I used React for structuring, Tailwind CSS for styling, and Firebase to deploy the site. 
           </p>
         </div>
         
         <div className="py-4">
           <p className='font-bold text-lg sm:text-2xl'>Goal</p>
           <p className='text-s sm:text-lg'>
-            The goal of this project was to elevate my React skills into a creative passion project which will help document my progress in learning new tools and frameworks.
-            I placed emphasis on front-end creativity, learning React routing, and incorporating more JavaScript animation and effects to make a more engaging and dynamic user interface.
-            I specifically chose to incorporate Tailwind CSS to solidify my skills of efficient and reliable app building with a modern CSS framework. 
+            The goal of this project was to elevate my React skills within a creative passion project which will help document my progress in learning new tools and frameworks.
+            I placed emphasis on front-end creativity, learning React routing, and incorporating JavaScript effects to make a more engaging and dynamic user interface.
+            I specifically chose to incorporate Tailwind CSS to solidify my skills of efficient app building with a modern CSS framework. 
           </p>
         </div>
         

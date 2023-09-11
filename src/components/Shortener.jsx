@@ -19,8 +19,8 @@ const Shortener = () => {
           <p className='pt-[10px] font-bold text-lg sm:text-2xl'>About</p>
           <p className='text-s sm:text-lg'>
             In Shorten Pls, I used Express.js and MongoDB to create a functioning URL shortener utilizing a backend, user interface, and database. 
-            I used a MongoDB database to display the history of user entered links, shortened links, and amount of times a shortened link was clicked. 
-            Furthermore, through Mongoose, I defined a data schema that governed how the short and long links would be handled within the database. 
+            I used a MongoDB database to display the history of user-entered links, shortened links, and the amount of times a shortened link was clicked. 
+            Furthermore, with Mongoose, I defined a data schema that governed how the short and long links would be handled within the database. 
           </p>
         </div>
         
@@ -28,7 +28,7 @@ const Shortener = () => {
           <p className='font-bold text-lg sm:text-2xl'>Goal</p>
           <p className='text-s sm:text-lg'>
             The goal of this project was to gain a deeper understanding of how data is processed and transferred between a database and a server, with a specific emphasis on GET and POST requests.
-            I also sought to implement these processes with popular tools like MongoDB and Express.js.  
+            I sought to implement these processes with popular tools like MongoDB and Express.js.  
           </p>
         </div>
         
