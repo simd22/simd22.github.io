@@ -4,7 +4,7 @@ import github from '../assets/github.png'
 
 const Shortener = () => {
   return (
-    <div name="shortener" className='w-full h-screen pt-[60px] pb-[60px] bg-[#F3E5FA] flex flex-col items-center overflow-auto'>
+    <div name="shortener" className='w-full h-screen pt-[60px] pb-[60px] bg-white flex flex-col items-center overflow-auto'>
       
       <div className='w-[350px] sm:w-1/2 mx-auto pt-[50px]'>
         <img src={short} alt="" className='rounded-lg'/>
@@ -44,7 +44,7 @@ const Shortener = () => {
       </div>
       
       <a href="https://github.com/simd22/ShortenPls" target="_blank" rel="noopener noreferrer">
-      <button className='bg-pink-600 text-[#F3E5FA] group border-2 px-9 py-3 my-2 flex items-center rounded-full hover:bg-[#0019C1] hover:border-[#0019C1] hover:text-[#FCF9DC]'>
+      <button className='bg-[#F3AD55] border-[#F3AD55] text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:border-[#F3AD55] hover:text-[#F3AD55]'>
           <p className='pr-3'>See Code</p>
           <img src={github} alt="link to github" className='w-[20px] h-[20px]' />
         </button>

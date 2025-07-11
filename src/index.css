@@ -7,7 +7,9 @@
 
 @layer base {
     body {
-        @apply font-[Quicksand];
+        /* @apply font-[Quicksand]; */
+        /* @apply font-verdana; */
+        @apply font-arial;
     }
     li {
         @apply px-4;
@@ -23,12 +25,15 @@
 }
 
 .content-div:hover {
-    background-image: linear-gradient(
-        to right,
-        
-        rgba(235, 103, 246, 0.8),
-        /* hsla(242, 74%, 61%, 0.8) */
-        hsla(330, 93%, 88%, 1)
-
-    )!important;
+  background-image: linear-gradient(
+    to right,
+    rgba(243, 173, 85, 0.8),
+    rgba(250, 223, 188, 0.9)
+  ) !important;
 }
+
+/* // #F3AD55 normal orange 
+// #FADFBC light orangeg
+// #F6C17C highlighted tab
+// #DCC5A7 grey orange
+// old pink F3E5FA */

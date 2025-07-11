@@ -6,29 +6,29 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen pt-[60px] bg-[#F3E5FA]">
+    <div name="home" className="w-full h-screen pt-[60px] bg-white">
       {/* Container */}
       <div className="max-w-[1100px] mx-auto px-8 flex flex-col justify-center h-full md:flex-row md:items-center">
         {/* TEXT */}
         <div className="max-w-[650px] md:flex flex-col">
-          <h2 className="text-1xl sm:text-4xl font-bold text-pink-600">
-            Hi, I'm Simeon!{" "}
-            <div className="text-1xl sm:text-4xl text-[#0019C1]">
-              <Typewriter
-                className="z-0"
-                options={{
-                  strings: ["Learner", "Leader", "Explorer"],
-                  autoStart: true,
-                  loop: true,
-                  cursor: "",
-                }}
-              />
-            </div>
+          <h2 className="text-1xl sm:text-4xl font-bold text-[#FCA734]">
+            Hi, I'm Simeon{" "}
           </h2>
-          <p className="text-1xl sm:text-3xl py-4 ">
+          <div className="text-1xl sm:text-4xl text-[#FABE4E]">
+            <Typewriter
+              className="z-0"
+              options={{
+                strings: ["Learner", "Leader", "Explorer"],
+                autoStart: true,
+                loop: true,
+                cursor: "",
+              }}
+            />
+          </div>
+          <p className="sm:text-2xl py-4 ">
             I recently graduated from Brown University as a student-athlete and
             am returning for a Fifth Year Master's in Computer Science. I'm
-            passionate about solving big picture challenges to drive excellence.
+            passionate about solving big picture challenges to drive excellence!
           </p>
           <div className="flex">
             <ScrollLink
@@ -37,7 +37,7 @@ const Home = () => {
               smooth={true}
               duration={500}
             >
-              <button className="bg-pink-600 text-[#F3E5FA] group border-2 px-6 py-3 my-2 flex items-center rounded-full hover:bg-[#E4F8E6] hover:border-[#E4F8E6] hover:text-[#4CAF50]">
+              <button className="bg-[#F3AD55] border-[#F3AD55] text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:border-[#F3AD55] hover:text-[#F3AD55]">
                 See Projects
               </button>
             </ScrollLink>
