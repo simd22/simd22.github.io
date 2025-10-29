@@ -26,9 +26,10 @@ const Home = () => {
             />
           </div>
           <p className="sm:text-2xl py-4 ">
-            I recently graduated from Brown University as a student-athlete and
-            am returning for a Fifth Year Master's in Computer Science. I'm
-            passionate about solving big picture challenges to drive excellence!
+            {/* I recently graduated from Brown University as a student-athlete and
+            am returning for a Fifth Year Master's in Computer Science.  */}
+            I'm a student-athlete at Brown University studying Computer Science and graduating in May 2026. 
+            I'm passionate about solving big picture challenges to drive excellence!
           </p>
           <div className="flex">
             <ScrollLink
